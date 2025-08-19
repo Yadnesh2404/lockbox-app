@@ -44,12 +44,12 @@ export const AddPasswordDialog = ({ onAdd }: AddPasswordDialogProps) => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button className="gap-2">
+        <Button className="gap-2 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 shadow-lg shadow-primary/30 transition-all duration-200 hover:scale-105">
           <Plus className="w-4 h-4" />
           Add Password
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="sm:max-w-md bg-gradient-to-br from-card via-card to-accent/20 backdrop-blur-sm border-border/50 animate-scale-in">
         <DialogHeader>
           <DialogTitle>Add New Password</DialogTitle>
         </DialogHeader>
